@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body body class="bg-dark">
+    <div class=" container">
+        <section class="flow">
+            <h1>Design System</h1>
+
+            <div class="bg-light text-dark">
+            light blue bg, with dark text 
+            </div>
+
+            <div class="bg-white text-dark">
+            white bg, with dark text 
+            </div>   
+
+            <div class="component-example text-white" >
+                <h2 class="numbered-title"><span>01</span> colors</h2>light blue bg, with a 200% alpha and white text
+            </div>
+        </section>
+        <section class="flow">
+            <h2 class="numbered-title"> <span> 03</span> Interactive Elements </h2>
+
+            
+            <div></div>
+            <div class="flex" style="margin-bottom: 30vh;">
+                <div style="margin-top: 5rem;"> 
+                    <!-- Explore button--> 
+                    <a href="#" class="large-button grid uppercase ff-serif fs-600 text-dark bg-white"> Explore </a>
+                </div>
+                <div>
+
+                    <!-- navigation-->
+                        <nav>
+                            <ul class="primary-navigation underline-indicators flex">
+                                <li class="active"> <a href="#" class="active text-white letter-spacing-2 uppercase"> <span> 1 </span> Active </a></li>
+                                <li> <a href="#" class="text-white letter-spacing-2 uppercase"> <span> 2 </span> Hovered</a></li>
+                                <li> <a href="#" class="text-white letter-spacing-2 uppercase"> <span> 3 </span> Idle </a></li>
+                            </ul>
+                        </nav>
+
+                    <!-- Tab List-->
+                    <div class="tab-indicators underline-indicators flex" aria-multiselectable="true">
+                        <button class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2" aria-selected="true">Moon</button>
+                        <button class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2" aria-selected="false">Mars</button>
+                        <button class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2" aria-selected="false">Europa</button>
+                    </div> 
+                    <!-- Dots -->
+                    <div class="dot-indicators flex" aria-multiselectable="true">
+                        <button aria-selected="true"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                    </div> 
+                    <!-- Numbers -->
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

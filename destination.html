@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap">
+
+    <!-- Our custom Css -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <title> Space tourism website</title>
+</head>
+<body class="home">
+    <a class="skip-to-main"  href="#main"> Skip to main </a>
+    <header class="flex">
+        <!--my before-->
+        <div>
+            <img src="/assets/favicon-32x32.png" alt="logo" class="logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <li class="active"> <a href="index.html" class=" ff-sans-cond active text-white letter-spacing-2 uppercase"> <span aria-hidden="true"> 00 </span> Home </a></li>
+                <li> <a href="destination.html" class=" ff-sans-cond text-white letter-spacing-2 uppercase"> <span aria-hidden="true"> 01 </span> Destination</a></li>
+                <li> <a href="crew.html" class=" ff-sans-cond text-white letter-spacing-2 uppercase"> <span aria-hidden="true"> 02 </span> Crew </a></li>
+                <li> <a href="technology.html" class=" ff-sans-cond text-white letter-spacing-2 uppercase"> <span aria-hidden="true"> 03 </span> Technology </a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="main" class="grid-container grid-container--destination flow">
+        
+        <h1 class="numbered-title text-white"> <span aria-hidden="true"> 01 </span> Pick your destination</h1>
+
+        <img src="assets/destination/image-moon.png" alt="the moon">
+
+        <div class="tab-indicators underline-indicators flex">
+            <button aria-selected="true" class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Moon</button>
+            <button aria-selected="false" class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Mars</button>
+            <button aria-selected="false" class="uppercase ff-sans-cond text-light bg-dark letter-spacing-2">Europa</button>
+        </div> 
+
+        <article class="destination-content">
+         
+            <h2 class="ff-sans-normal text-white fs-900">Moon</h2>
+            <p class="text-light" >See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            
+            <div class="flex destination-meta">
+                <div>
+                <h3 class="text-white">Avg. Distance</h3>
+                <p class="text-white uppercase fs-500">384,400</p>
+                </div>
+
+                <div>
+                <h3 class="text-white">Est. travel time</h3>
+                <p class="text-white uppercase fs-500">3 days</p>
+                </div>
+            </div>  
+        </article>
+
+    </main>
+    <script src="./index.js" defer> </script>
+</body>
+</html>
