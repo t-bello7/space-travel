@@ -25,13 +25,13 @@
 
 <!-- ### Usage -->
 
-### Run tests
+<!-- ### Run tests -->
 <!-- npx stylelint "**/*.{css,scss}"
 npx eslint . -->
-### Deployment
+<!-- ### Deployment -->
 
 ## Resources
-- https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1
+- https://www.figma.com/file/iT4ZKcAHeUYdM2tnltDOzr/space-tourism-website?node-id=0%3A1
 
 ## Authors
 
@@ -54,7 +54,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse School git
+- =Kevin Powell and FrontendMasters
 
 ## 📝 License
 
