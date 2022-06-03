@@ -1,70 +1,3 @@
-/* Utility */
-/* do one thing and do one thing well */
-
-.flex {
-    display: flex;
-    gap: var(--gap, 1rem);
-}
-
-.d-block{
-    display:block;
-}
-.grid {
-    display: grid;
-    gap: var(--gap, 1rem);   
-}
-
-.flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-space, 1rem);
-}
-
-.container {
-    padding-inline: 2em;
-    margin-inline: auto;
-    max-width: 60rem;
-}
-
-.grid-container {
-    text-align: center;
-    display:grid;
-    /* place-content:center;
-    row-gap: 10%; */
-    place-items: center;
-    padding-inline: 1rem;
-    padding-bottom: 3rem;
-}
-
-.grid-container * {
-    max-width: 50ch; 
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin : -1px;
-    overflow: hidden;
-    clip: rect(0 ,0 ,0 ,0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.skip-to-main{
-    background: hsl(var(--clr-white));
-    position: absolute;
-    z-index: 9999;
-    color: hsl(var(--clr-dark));
-    background: hsl(var(--clr-white));
-    padding: .5em 1em;
-    margin-inline: auto;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease-in;
-}
-
-.skip-to-main:focus{
-    transform: translateY(0);
-}
 
 /* Custom properties */
 :root {
@@ -88,6 +21,9 @@
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
 }
+
+/* Utility Classes */
+/* do one thing and do one thing well */
 
 /* Colors */
 .bg-dark { background-color: hsl(var(--clr-dark));}
@@ -124,6 +60,70 @@
 .fs-700,
 .fs-600 {
     line-height: 1.1;
+}
+
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.d-block{
+    display:block;
+}
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);   
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 60rem;
+}
+
+.grid-container {
+    text-align: center;
+    display:grid;
+    place-items: center;
+    padding-inline: 1rem;
+    padding-bottom: 3rem;
+}
+
+.grid-container * {
+    max-width: 50ch; 
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin : -1px;
+    overflow: hidden;
+    clip: rect(0 ,0 ,0 ,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-to-main{
+    background: hsl(var(--clr-white));
+    position: absolute;
+    z-index: 9999;
+    color: hsl(var(--clr-dark));
+    background: hsl(var(--clr-white));
+    padding: .5em 1em;
+    margin-inline: auto;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in;
+}
+
+.skip-to-main:focus{
+    transform: translateY(0);
 }
 
 @media (min-width: 35em){
